@@ -54,7 +54,7 @@ def read_requirements(filename):
     requirements = []
 
     try:
-        with open(filename, 'rb') as f:
+        with open(filename, 'r') as f:
             for line in f.readlines():
                 line = line.strip()
                 if not line or line.startswith('#') or line == '':
